@@ -2,11 +2,17 @@ package org.delcom.starter.controllers;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HomeControllerUnitTest {
-    // Test untuk metode hello()
+class HomeControllerTest {
+
+    private final HomeController controller = new HomeController();
+
     @Test
     @DisplayName("Mengembalikan pesan selamat datang yang benar")
     void hello_ShouldReturnWelcomeMessage() {
@@ -33,4 +39,5 @@ class HomeControllerUnitTest {
         // Assert
         assertEquals("Hello, Abdullah!", result);
     }
+
 }
