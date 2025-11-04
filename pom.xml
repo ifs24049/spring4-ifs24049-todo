@@ -12,10 +12,10 @@
 	</parent>
 
 	<groupId>org.delcom</groupId>
-	<artifactId>spring-starter</artifactId>
+	<artifactId>spring-todos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Spring Todo</name>
-	<description>Starter Application with Spring Boot</description>
+	<name>Spring Todos</name>
+	<description>Todo Application with Spring Boot</description>
 
 	<properties>
 		<java.version>25</java.version>
@@ -26,6 +26,7 @@
 		<maven.jacoco.plugin.version>0.8.14</maven.jacoco.plugin.version>
 		<!-- Versi dependency yang digunakan -->
 		<maven.dependency.mockito.version>5.20.0</maven.dependency.mockito.version>
+		<maven.dependency.jakarta.servlet-api.version>6.1.0</maven.dependency.jakarta.servlet-api.version>
 	</properties>
 
 	<dependencies>
@@ -68,8 +69,21 @@
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
-			<version>6.1.0</version>
+			<version>${maven.dependency.jakarta.servlet-api.version}</version>
 			<scope>provided</scope>
+		</dependency>
+
+		<!-- Dependency for Spring Data JPA and PostgreSQL -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Dependency for PostgreSQL -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 

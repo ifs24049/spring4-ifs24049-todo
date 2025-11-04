@@ -1,4 +1,4 @@
-package org.delcom.starter.configs;
+package org.delcom.todos.configs;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

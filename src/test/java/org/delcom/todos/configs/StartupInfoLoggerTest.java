@@ -1,4 +1,4 @@
-package org.delcom.starter.configs;
+package org.delcom.todos.configs;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
 
-class StartupInfoLoggerTest {
+class StartupInfoLoggerTests {
 
     private StartupInfoLogger logger;
 
