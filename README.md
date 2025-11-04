@@ -13,6 +13,15 @@
 
 command: `mvn clean install`
 
+#### Windows: elakukan build ulang proyek dan membuka hasil laporan
+command with open jacoco: `mvn clean test; start target\site\jacoco\index.html`
+
+#### Mac: melakukan build ulang proyek dan membuka hasil laporan
+command with open jacoco: `mvn clean test && open target\site\jacoco\index.html`
+
+#### Linux: melakukan build ulang proyek dan membuka hasil laporan
+command with open jacoco: `mvn clean test && xdg-open target\site\jacoco\index.html`
+
 ### Menjalankan Aplikasi
 
 Command: `mvn spring-boot:run`

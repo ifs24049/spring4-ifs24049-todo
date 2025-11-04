@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class HomeControllerUnitTest {
     @Test
     @DisplayName("Mengembalikan pesan selamat datang yang benar")
-    void hello_ShouldReturnWelcomeMessage() {
+    void hello_ShouldReturnWelcomeMessage() throws Exception {
         // Arrange
         HomeController controller = new HomeController();
 
@@ -16,6 +16,6 @@ class HomeControllerUnitTest {
         String result = controller.hello();
 
         // Assert
-        assertEquals("Hay Abdullah, selamat datang di pengembangan aplikasi dengan Spring Boot!", result);
+        assertEquals("Hay, selamat datang di Spring Boot!", result);
     }
 }
