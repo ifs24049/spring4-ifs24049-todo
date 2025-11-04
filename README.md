@@ -1,6 +1,10 @@
-# Spring v4.0 Starter Proyek
+# Spring v4.0 Proyek Starter
 
 ## Logs
+
+### 04-11-2025
+
+- Memperbarui kebutuhan paket
 
 ### 29-10-2025
 
@@ -29,6 +33,8 @@ Command: `mvn spring-boot:run`
 URL: http://localhost:8080
 
 ### Menjalankan Test Covertage
+
+pre-command: `mvn clean install`
 
 command: `./mvnw test jacoco:report`
 
