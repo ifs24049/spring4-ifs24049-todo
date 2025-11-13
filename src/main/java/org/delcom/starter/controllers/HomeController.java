@@ -158,9 +158,6 @@ public class HomeController {
 
         // Helper perolehan-nilai
 
-    
-
-
     @GetMapping("/perbedaan-l")
     public String perbedaanL(@RequestParam String strBase64) {
         String decodedInput = decode(strBase64).trim();
